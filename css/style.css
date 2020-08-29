@@ -10,7 +10,7 @@ body {
   overflow-x: hidden;
 }
 
-html {
+html:not(#contactform,#startup_idea) {
   scroll-behavior: smooth;
 }
 
