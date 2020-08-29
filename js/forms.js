@@ -4,9 +4,15 @@ const ideaForm = document.forms["idea"];
 
 ideaForm.addEventListener("submit", (e) => {
   e.preventDefault();
+  if ($("input[name=Student]:checked").val() == "No") {
+    $("#stream").val("");
+    $("#year").val("");
+  }
   fetch(ideaScriptURL, { method: "POST", body: new FormData(ideaForm) })
     .then(() => {
       ideaForm.reset();
+      $("#stream").val("CSE");
+      $("#year").val("FE");
       swal({
         title: "Idea Submitted!",
         text: "We'll review your idea and get in contact with you soon",
