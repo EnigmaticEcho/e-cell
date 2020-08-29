@@ -4,7 +4,6 @@
 //   $("nav").toggleClass("navbar-light", $(this).scrollTop() > 20);
 // });
 
-
 var width = $(window).width();
 $(window).on("resize", function () {
   console.log("hello");
@@ -19,7 +18,15 @@ $(window).on("resize", function () {
 });
 
 $(".nav-link").click(() => {
-  $(".navbar-toggler").click();
+  setTimeout(() => {
+    $(".navbar-toggler").click();
+  }, 900);
+});
+
+$("#get-in-touch").click(() => {
+  setTimeout(() => {
+    $(".navbar-toggler").click();
+  }, 900);
 });
 
 if (width < 1200) {
