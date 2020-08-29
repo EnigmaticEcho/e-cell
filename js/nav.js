@@ -20,7 +20,7 @@ function unextendVid() {
 
 var width = $(window).width();
 $(window).on("resize", function () {
-  console.log("hello");
+  // console.log("hello");
   if ($(this).width() !== width) {
     width = $(this).width();
     if (width > 1200) {
