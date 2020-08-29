@@ -1067,10 +1067,35 @@
       <script src="js/forms.js"></script>
 
       <script>
+        function scrolled() {
+          $("nav").addClass("scrolled");
+          $("nav").addClass("navbar-light");
+          $("nav").removeClass("navbar-dark");
+        }
+        function unscrolled() {
+          $("nav").removeClass("scrolled");
+          $("nav").removeClass("navbar-light");
+          $("nav").addClass("navbar-dark");
+        }
         $(window).scroll(function () {
-          $("nav").toggleClass("scrolled", $(this).scrollTop() > 20);
-          $("nav").toggleClass("navbar-dark", $(this).scrollTop() <= 20);
-          $("nav").toggleClass("navbar-light", $(this).scrollTop() > 20);
+          console.log($(".navbar-collapse").hasClass("show"));
+          if (
+            $(this).scrollTop() > 20 ||
+            $(".navbar-collapse").hasClass("show")
+          )
+            scrolled();
+          else unscrolled();
+        });
+
+        $(".navbar-toggler").click(() => {
+          if (
+            $(".navbar-collapse").hasClass("show") &
+            ($(window).scrollTop() <= 20)
+          ) {
+            unscrolled();
+          } else {
+            scrolled();
+          }
         });
 
         mapboxgl.accessToken =

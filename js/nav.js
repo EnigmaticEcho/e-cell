@@ -10,13 +10,13 @@ function unextendVid() {
   $(".header-overlay").removeClass("extend-vid");
 }
 
-$(".navbar-toggler").click(() => {
-  if (!$(".navbar-collapse").hasClass("show")) {
-    extendVid();
-  } else {
-    unextendVid();
-  }
-});
+// $(".navbar-toggler").click(() => {
+//   if (!$(".navbar-collapse").hasClass("show")) {
+//     extendVid();
+//   } else {
+//     unextendVid();
+//   }
+// });
 
 var width = $(window).width();
 $(window).on("resize", function () {
@@ -25,11 +25,11 @@ $(window).on("resize", function () {
     width = $(this).width();
     if (width > 1200) {
       if ($(".navbar-collapse").hasClass("show")) {
-        unextendVid();
+        // unextendVid();
       }
     } else {
       if ($(".navbar-collapse").hasClass("show")) {
-        extendVid();
+        // extendVid();
         closeNavOnClickingOutside();
       }
     }
