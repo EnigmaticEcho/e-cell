@@ -37,12 +37,14 @@ $(window).on("resize", function () {
 });
 
 $(".nav-link").click(() => {
+  if(width<1200)
   setTimeout(() => {
     $(".navbar-toggler").click();
   }, 900);
 });
 
 $("#get-in-touch").click(() => {
+  if(width<1200)
   setTimeout(() => {
     $(".navbar-toggler").click();
   }, 900);
@@ -56,7 +58,7 @@ function closeNavOnClickingOutside() {
   $("body > *")
     .not("body > nav")
     .click(() => {
-      if ($(".navbar-collapse").hasClass("show")) {
+      if (width<1200 && $(".navbar-collapse").hasClass("show")) {
         $(".navbar-toggler").click();
       }
     });

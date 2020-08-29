@@ -233,7 +233,10 @@
                   <div class="numbers-container row">
                     <div class="col-lg-3">
                       <div class="counterholder">
-                        <a href="https://instagram.com/ecell_djsce?igshid=1osdfh57d1bsr" target="_blank">
+                        <a
+                          href="https://instagram.com/ecell_djsce?igshid=1osdfh57d1bsr"
+                          target="_blank"
+                        >
                           <i class="fab fa-instagram" id="allicon"></i>
                         </a>
                         <div class="item-animate">
@@ -264,7 +267,9 @@
                     </div>
                     <div class="col-lg-3">
                       <div class="counterholder">
-                        <a href="https://www.youtube.com/channel/UCPJARs_4heM8fYJYU9eP4Kw">
+                        <a
+                          href="https://www.youtube.com/channel/UCPJARs_4heM8fYJYU9eP4Kw"
+                        >
                           <i class="fab fa-youtube" id="allicon"></i>
                         </a>
                         <div class="item-animate">
@@ -528,7 +533,10 @@
                   tailored to fit and premium fabrics to go with them.The
                   company is involved in the manufacture of other textiles.
                 </p>
-                <a class="hvr-icon-forward">
+                <a
+                  class="hvr-icon-forward"
+                  href="http://www.djsce.ac.in/e-cell/pdf/clofactory.pdf"
+                >
                   Read More
                   <i class="zmdi zmdi-arrow-right hvr-icon"></i>
                 </a>
@@ -545,7 +553,10 @@
                   we make garments out of it which are 100% safe and hygienic to
                   wear. One t-shirt recycles 15 plastic bottles.
                 </p>
-                <a class="hvr-icon-forward">
+                <a
+                  class="hvr-icon-forward"
+                  href="http://www.djsce.ac.in/e-cell/pdf/wearthreads.pdf"
+                >
                   Read More
                   <i class="zmdi zmdi-arrow-right hvr-icon"></i>
                 </a>
@@ -564,7 +575,10 @@
                 </p>
                 <a class="hvr-icon-forward">
                   Read More
-                  <i class="zmdi zmdi-arrow-right hvr-icon"></i>
+                  <i
+                    class="zmdi zmdi-arrow-right hvr-icon"
+                    href="https://www.dwebbox.com/"
+                  ></i>
                 </a>
               </div>
             </div>
@@ -898,8 +912,10 @@
                   >
                     <div class="p-4">
                       <h5 class="font-weight-light">
-                        DJS E-cell has been influential in triggering awareness, interest, desire and sustained action towards building the
-                        entrepreneurial spirit required among the students in a significant way.
+                        DJS E-cell has been influential in triggering awareness,
+                        interest, desire and sustained action towards building
+                        the entrepreneurial spirit required among the students
+                        in a significant way.
                       </h5>
                     </div>
                   </div>
@@ -913,7 +929,10 @@
                     </div>
                     <div class="testimonial-by">
                       <h6 class="font-weight-bold mb-0">Dr. Hari Vasudevan</h6>
-                      <span class="font-13">Principal, Dwarkadas J.Sanghvi College of Engineering</span>
+                      <span class="font-13"
+                        >Principal, Dwarkadas J.Sanghvi College of
+                        Engineering</span
+                      >
                     </div>
                   </div>
                 </div>
@@ -1058,17 +1077,13 @@
                   target="_blank"
                   ><i class="footer-social fab fa-linkedin" id="allicon"></i
                 ></a>
-                <a
-                  href="https://www.facebook.com/djsce.ecell.7"
-                  target="_blank"
+                <a href="https://www.facebook.com/djsce.ecell.7" target="_blank"
                   ><i
                     class="footer-social fab fab fa-facebook-f fab-lg"
                     id="allicon"
                   ></i>
                 </a>
-                <a
-                  href="https://twitter.com/EcellD?s=12"
-                  target="_blank"
+                <a href="https://twitter.com/EcellD?s=12" target="_blank"
                   ><i class="footer-social fab fa-twitter" id="allicon"></i
                 ></a>
                 <a
@@ -1161,42 +1176,41 @@
           };
         }
 
+        $("form").on("focus", "input[type=name]", function (e) {
+          $(this).on("wheel.disableScroll", function (e) {
+            e.preventDefault();
+          });
+        });
+        $("form").on("blur", "input[type=name]", function (e) {
+          $(this).off("wheel.disableScroll");
+        });
 
-        $('form').on('focus', 'input[type=name]', function (e) {
-          $(this).on('wheel.disableScroll', function (e) {
-          e.preventDefault()
-          })
-        })
-        $('form').on('blur', 'input[type=name]', function (e) {
-          $(this).off('wheel.disableScroll')
-        })
+        $("form").on("focus", "input[type=email]", function (e) {
+          $(this).on("wheel.disableScroll", function (e) {
+            e.preventDefault();
+          });
+        });
+        $("form").on("blur", "input[type=email]", function (e) {
+          $(this).off("wheel.disableScroll");
+        });
 
-        $('form').on('focus', 'input[type=email]', function (e) {
-          $(this).on('wheel.disableScroll', function (e) {
-          e.preventDefault()
-          })
-        })
-        $('form').on('blur', 'input[type=email]', function (e) {
-          $(this).off('wheel.disableScroll')
-        })
+        $("form").on("focus", "input[type=tel]", function (e) {
+          $(this).on("wheel.disableScroll", function (e) {
+            e.preventDefault();
+          });
+        });
+        $("form").on("blur", "input[type=tel]", function (e) {
+          $(this).off("wheel.disableScroll");
+        });
 
-        $('form').on('focus', 'input[type=tel]', function (e) {
-          $(this).on('wheel.disableScroll', function (e) {
-          e.preventDefault()
-          })
-        })
-        $('form').on('blur', 'input[type=tel]', function (e) {
-          $(this).off('wheel.disableScroll')
-        })
-
-        $('form').on('focus', 'textarea', function (e) {
-          $(this).on('wheel.disableScroll', function (e) {
-          e.preventDefault()
-          })
-        })
-        $('form').on('blur', 'textarea', function (e) {
-          $(this).off('wheel.disableScroll')
-        })
+        $("form").on("focus", "textarea", function (e) {
+          $(this).on("wheel.disableScroll", function (e) {
+            e.preventDefault();
+          });
+        });
+        $("form").on("blur", "textarea", function (e) {
+          $(this).off("wheel.disableScroll");
+        });
         // $("#submit_idea").click(function (event) {
         //   event.preventDefault();
         //   console.log("hi");
