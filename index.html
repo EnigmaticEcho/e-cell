@@ -1159,43 +1159,7 @@
             document.getElementById("studentInfo").style.display = "none";
           };
         }
-
-
-        $('form').on('focus', 'input[type=name]', function (e) {
-          $(this).on('wheel.disableScroll', function (e) {
-          e.preventDefault()
-          })
-        })
-        $('form').on('blur', 'input[type=name]', function (e) {
-          $(this).off('wheel.disableScroll')
-        })
-
-        $('form').on('focus', 'input[type=email]', function (e) {
-          $(this).on('wheel.disableScroll', function (e) {
-          e.preventDefault()
-          })
-        })
-        $('form').on('blur', 'input[type=email]', function (e) {
-          $(this).off('wheel.disableScroll')
-        })
-
-        $('form').on('focus', 'input[type=tel]', function (e) {
-          $(this).on('wheel.disableScroll', function (e) {
-          e.preventDefault()
-          })
-        })
-        $('form').on('blur', 'input[type=tel]', function (e) {
-          $(this).off('wheel.disableScroll')
-        })
-
-        $('form').on('focus', 'textarea', function (e) {
-          $(this).on('wheel.disableScroll', function (e) {
-          e.preventDefault()
-          })
-        })
-        $('form').on('blur', 'textarea', function (e) {
-          $(this).off('wheel.disableScroll')
-        })
+        
         // $("#submit_idea").click(function (event) {
         //   event.preventDefault();
         //   console.log("hi");
