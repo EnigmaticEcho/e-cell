@@ -10,7 +10,11 @@ body {
   overflow-x: hidden;
 }
 
+<<<<<<< HEAD
 html{
+=======
+html {
+>>>>>>> 210c9c149cca07f2026583a8e96c3395cf31ef5f
   scroll-behavior: smooth;
 }
 
